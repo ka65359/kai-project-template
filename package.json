@@ -1,34 +1,44 @@
 {
   "name": "kai-project-template",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+  "version": "1.0.0",
+  "description": "Kai's Project Template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ka65359/kai-project-template.git"
   },
+  "author": "Kai Arrowood",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "clean": "yarn cache clean && yarn install",
+    "scripts": "npm-scripts-info",
+    "start": "react-scripts start",
+    "validate": "yarn check --integrity"
+  },
+  "scripts-info": {
+    "scripts": "Display information about the scripts",
+    "start": "Start a development server",
+    "validate": "Check for improperly installed dependencies"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react-scripts": "3.4.1"
+  },
+  "devDependecies": {
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-15": "1.4.1",
+    "fetch-mock": "7.3.0",
+    "jest": "^22.4.4",
+    "npm-scripts-info": "^0.3.6",
+    "react": "^15.6.1",
+    "react-dom": "15.6.1",
+    "react-hot-loader": "3.0.0-beta.2",
+    "react-test-renderer": "15.6.1",
+    "react-testing-library": "^4.1.2"
   }
 }
